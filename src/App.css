@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --grey: rgb(73, 73, 73);
+  --dark-grey: rgb(37, 37, 37);
+  --green: rgb(52, 170, 82);
+  --red: rgb(255, 66, 66);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.login {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-grey);
+}
+
+.login-container {
+  height: 40vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: var(--grey);
+
+  color: white;
+}
+
+.login-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-container button {
+  padding: 10px;
+  width: 100px;
+  border-radius: 24px;
+  background: none;
+  border: 2px solid var(--green);
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--green);
+  transition: all 0.15s ease;
+}
+.login-container button:hover {
+  transform: scale(1.1);
+  color: rgb(3, 108, 30);
+  background-color: var(--green);
+}
+
+.home {
+  background-color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  background-color: rgb(21, 21, 21);
+
+  border-right: 1px solid rgb(62, 62, 62);
+}
+
+.sidebar h3,
+.sidebar .user {
+  font-weight: 100;
+}
+
+.sidebar img {
+  object-fit: cover;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.sidebar .user {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(61, 61, 61);
+
+  padding: 10px;
+}
+
+.sidebar-head button {
+  border-radius: 18px;
+  padding: 5px 10px 5px 10px;
+  color: var(--red);
+  background: none;
+  cursor: pointer;
+  border: 1px solid var(--red);
+  transition: all 0.15s ease;
+}
+
+.sidebar-head button:hover {
+  color: white;
+  background: var(--red);
+}
+
+.chat {
+  display: flex;
+  flex: 3;
+  min-height: 100vh;
+}
+
+.chat-users {
+  display: flex;
+  align-items: center;
+  background-color: rgb(47, 47, 47);
+  margin-bottom: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chat-users:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+.chat-users .chat-avatar {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chat-head {
+  display: flex;
+  align-items: center;
+  background-color: rgb(75, 75, 75);
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.042);
+  margin-bottom: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.chatbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+  margin: 10px;
+}
+
+.chatbar input {
+  height: 35px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  border: none;
+}
+
+.chat-bar button {
+  cursor: pointer;
+}
+
+.chatbar .send-btn {
+  width: 5%;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(255, 179, 0);
+}
+
+.chatbar .image-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(123, 86, 0);
+}
