@@ -17,7 +17,7 @@ export default function Login() {
           photoURL: res.user.photoURL,
         });
         await setDoc(doc(db, "userChats", res.user.uid), {});
-        nav("/login");
+        nav("/");
       })
       .catch((err) => console.log(err));
   };

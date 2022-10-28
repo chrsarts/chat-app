@@ -1,5 +1,6 @@
 import React from "react";
 import Friendslist from "./Friendslist";
+import Search from "./Search";
 import User from "./User";
 
 export default function Sidebar() {
@@ -8,7 +9,7 @@ export default function Sidebar() {
       <div className="sidebar-head">
         <h3 className="logo">chats c:</h3>
       </div>
-      <Friendslist />
+      <Search />
       <Friendslist />
       <footer>
         <User />
